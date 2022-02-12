@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cart - Ravi Jewellers</title>
+    <link rel="icon" sizes="192x192" href="images/favilogo.png">
+    <link rel="apple-touch-icon" href="images/favilogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica|Arial|Poppins|Ubuntu|Raleway|Montserrat">
+    <link rel="stylesheet" type="text/css" href="./styles/w3.css">
+    <link rel="stylesheet" type="text/css" href="./styles/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/cart.css" />
+</head>
+<body>
+    <div id="goTopBtn" onclick="gotoTop();return false;" class="animated faster"><i class="fas fa-angle-up"></i></div>
+    <div class="nav-bar">
+        <div class="row">
+            <div class="logo">
+                <img src="./images/logo.jpg" onclick="window.location='index.html';" />
+            </div>
+            <div class="menu">
+                <p><a href="index.html">Home</a></p>
+                <p><b><a href="shop.html">Shop</a></b></p>
+                <p><a href="#">Collections</a></p>
+                <p><a href="#">About</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+            <div class="options">
+                <i class="fas fa-bars" id="bars" onclick="dropDownMenuControl();return false;"></i>
+                <i class="far fa-user-circle" id="user"></i>
+                <i class="fas fa-shopping-bag" onclick="showHideCartList();return false;"></i>
+                <span class="badge" onclick="showHideCartList();return false;">2</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown animated fast">
+        <a class="nav-links" href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a class="nav-links" href="shop.html"><i class="fas fa-shopping-bag"></i><b> Shop</b></a>
+        <a class="nav-links" href="#"><i class="fas fa-image"></i> Collections</a>
+        <a class="nav-links" href="#"><i class="fas fa-info"></i> About</a>
+        <a class="nav-links" href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+    </div>
+
+    <div class="cart-list animated faster slideInRight">
+        <div class="row">
+            <div class="item">
+                <div class="img-holder"></div>
+                <div class="info">
+                    <p>Bangle<i class="far fa-trash-alt"></i></p>
+                    <p>h3638fgf678</p>
+                    <br />
+                    <p>x2</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-holder"></div>
+                <div class="info">
+                    <p>Bangle<i class="far fa-trash-alt"></i></p>
+                    <p>h3638fgf678</p>
+                    <br />
+                    <p>x2</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-holder"></div>
+                <div class="info">
+                    <p>Bangle<i class="far fa-trash-alt"></i></p>
+                    <p>h3638fgf678</p>
+                    <br />
+                    <p>x2</p>
+                </div>
+            </div>
+            <button class="view-cart" onclick="window.location.href = 'cart.html';return false;">View Cart</button>
+        </div>
+    </div>
+
+    <div class="cart-holder">
+        <div class="head-row">
+            <p></p>
+            <p>Product Type</p>
+            <p>Product ID</p>
+            <p>Quantity</p>
+            <p></p>
+        </div>
+        <div class="product-row">
+            <div class="product" id="pro1">
+                <div class="img-holder"></div>
+                <div class="sub">
+                    <p class="type">Ring</p>
+                    <p class="id">h33ugff989</p>
+                </div>
+                <div class="sub">
+                    <div class="quantity-holder">
+                        <div class="quantity">
+                            <button id="qtnMin">-</button>
+                            <p id="qtn">1</p>
+                            <button id="qtnPlus">+</button>
+                        </div>
+                    </div>
+                    <div class="remove">
+                        <p><i class="far fa-trash-alt"></i> Remove</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product" id="pro2">
+                <div class="img-holder"></div>
+                <div class="sub">
+                    <p class="type">Ring</p>
+                    <p class="id">h33ugff989</p>
+                </div>
+                <div class="sub">
+                    <div class="quantity-holder">
+                        <div class="quantity">
+                            <button id="qtnMin">-</button>
+                            <p id="qtn">1</p>
+                            <button id="qtnPlus">+</button>
+                        </div>
+                    </div>
+                    <div class="remove">
+                        <p><i class="far fa-trash-alt"></i> Remove</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="summary">
+            <h2>Order Summary</h2>
+            <br />
+            <div>
+                <p class="title">Total Items</p>
+                <p>3</p>
+            </div>
+            <div>
+                <p class="title">Total Quantity</p>
+                <p>27</p>
+            </div>
+            <div>
+                <p class="title">Order By</p>
+                <p class="address">Ram Pilas Sharma</p>
+            </div>
+            <br />
+            <button>Place an Order</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <div class="col">
+                <h3>Categories</h3>
+                <div class="sub">
+                    <div class="box">
+                        <p><a href="#">Nose Pins</a></p>
+                        <p><a href="#">Ear Rings</a></p>
+                        <p><a href="#">Mangalsutra</a></p>
+                        <p><a href="#">Loose Diamonds</a></p>
+                    </div>
+                    <div class="box">
+                        <p><a href="#">Chains</a></p>
+                        <p><a href="#">Pendants</a></p>
+                        <p><a href="#">Bangles</a></p>
+                        <p><a href="#">Finger Rings</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="nest">
+                    <h3>Collections</h3>
+                    <p><a href="#">Valentine</a></p>
+                    <p><a href="#">Anniversary</a></p>
+                    <p><a href="#">Wedding</a></p>
+                    <p><a href="#">Birthday</a></p>
+                </div>
+                <div class="nest">
+                    <h3>Contacts</h3>
+                    <p><i class="fas fa-at"></i> Email : abcdef@gmail.com</p>
+                    <p><i class="fab fa-whatsapp"></i> +9123456</p>
+                    <p><i class="fas fa-phone"></i> +9123456</p>
+                    <div class="social">
+                        <p><a href=""><i class="soc-icons fab fa-facebook-f"></i></a></p>
+                        <p><a href=""><i class="soc-icons fab fa-instagram"></i></a></p>
+                        <p><a href=""><i class="soc-icons fab fa-twitter"></i></a></p>
+                        <p><a href=""><i class="soc-icons fab fa-youtube"></i></a></p>
+                        <p><a href=""><i class="soc-icons fab fa-pinterest-p"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Our Store</h3>
+                <p>Shop no.1,<br><br>Haldia,West Bengal</p>
+                <a href="contact.html" id="store"><i class="fas fa-map-marker-alt"></i>&nbsp; Store Locator</a>
+            </div>
+        </div>
+        <div class="row">
+            <p id="copyright"></p>
+            <p>Developed By <a href="" id="developer">Dibkara</a></p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

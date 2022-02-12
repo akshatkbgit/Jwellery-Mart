@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact -  Jewellers</title>
+    <link rel="icon" sizes="192x192" href="images/favilogo.png">
+    <link rel="apple-touch-icon" href="images/favilogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica|Arial|Poppins:Light|Raleway|Montserrat">
+    <link rel="stylesheet" type="text/css" href="./styles/w3.css">
+    <link rel="stylesheet" type="text/css" href="./styles/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/contact.css" />
+</head>
+<body>
+    <div id="goTopBtn" onclick="gotoTop();return false;" class="animated faster"><i class="fas fa-angle-up"></i></div>
+    <div class="nav-bar">
+        <div class="row">
+            <div class="logo">
+                <img src="./images/logo.jpg" onclick="window.location='index.html';" />
+            </div>
+            <div class="menu">
+                <p><a href="index.html">Home</a></p>
+                <p><b><a href="shop.html">Shop</a></b></p>
+                <p><a href="#">Collections</a></p>
+                <p><a href="#">About</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+            <div class="options">
+                <i class="fas fa-bars" id="bars" onclick="dropDownMenuControl();return false;"></i>
+                <i class="far fa-user-circle" id="user"></i>
+                <i class="fas fa-shopping-bag" onclick="showHideCartList();return false;"></i>
+                <span class="badge" onclick="showHideCartList();return false;">2</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown animated fast">
+        <a class="nav-links" href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a class="nav-links" href="shop.html"><i class="fas fa-shopping-bag"></i><b> Shop</b></a>
+        <a class="nav-links" href="#"><i class="fas fa-image"></i> Collections</a>
+        <a class="nav-links" href="#"><i class="fas fa-info"></i> About</a>
+        <a class="nav-links" href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+    </div>
+
+    <div class="cart-list animated faster slideInRight">
+        <div class="row">
+            <div class="item">
+                <div class="img-holder"></div>
+                <div class="info">
+                    <p>Bangle<i class="far fa-trash-alt"></i></p>
+                    <p>h3638fgf678</p>
+                    <br />
+                    <p>x2</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-holder"></div>
+                <div class="info">
+                    <p>Bangle<i class="far fa-trash-alt"></i></p>
+                    <p>h3638fgf678</p>
+                    <br />
+                    <p>x2</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-holder"></div>
+                <div class="info">
+                    <p>Bangle<i class="far fa-trash-alt"></i></p>
+                    <p>h3638fgf678</p>
+                    <br />
+                    <p>x2</p>
+                </div>
+            </div>
+            <button class="view-cart" onclick="window.location.href = 'cart.html';return false;">View Cart</button>
+        </div>
+    </div>
+    
+    <div class="header">
+        <h1>Contact</h1>
+    </div>
+
+    <div class="contact-holder">
+        <div class="row">
+            <div class="map">
+                <iframe
+                width="600"
+                height="450"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+                  &q=Space+Needle,Seattle+WA">
+              </iframe>
+            <div class="form-area">
+                <h1>Send us your message</h1>
+                <form id="contact-form" method="POST">
+                    <input type="text" name="username" class="textbox" placeholder="Full Name" required />
+                    <input type="text" name="userphone" class="textbox" placeholder="Phone Number" required />
+                    <input type="email" name="useremail" class="textbox" placeholder="Email" required />
+                    <textarea placeholder="Message" name="usermsg" required ></textarea>
+                    <button type="submit" name="submit">SEND <i class="fas fa-share-square"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <div class="col">
+                <h3>Categories</h3>
+                <div class="sub">
+                    <div class="box">
+                        <p><a href="#">Nose Pins</a></p>
+                        <p><a href="#">Ear Rings</a></p>
+                        <p><a href="#">Mangalsutra</a></p>
+                        <p><a href="#">Loose Diamonds</a></p>
+                    </div>
+                    <div class="box">
+                        <p><a href="#">Chains</a></p>
+                        <p><a href="#">Pendants</a></p>
+                        <p><a href="#">Bangles</a></p>
+                        <p><a href="#">Finger Rings</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="nest">
+                    <h3>Collections</h3>
+                    <p><a href="#">Valentine</a></p>
+                    <p><a href="#">Anniversary</a></p>
+                    <p><a href="#">Wedding</a></p>
+                    <p><a href="#">Birthday</a></p>
+                </div>
+                
